@@ -8,9 +8,9 @@ public class Interface
     {
         return new PduInterface(macOrigem, macDestino, pduR);
     }
-    public void UnPack(PduInterface pduR, Computador comp)
+    public PduRede UnPack(PduInterface pduI)
     {
-
+        return pduI.Dados;
     }
         public void EnviarDados()
     {

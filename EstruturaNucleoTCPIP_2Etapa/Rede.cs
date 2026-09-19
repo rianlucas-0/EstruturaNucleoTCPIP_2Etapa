@@ -8,9 +8,9 @@ public class Rede
     {
         return new PduRede(ipOrigem, ipDestino, pduT);
     }
-    public void UnPack(PduRede pduR, Computador comp)
+    public PduRede UnPack(PduInterface pduI)
     {
-
+        return pduI.Dados;
     }
     public void EnviarDados()
     {
