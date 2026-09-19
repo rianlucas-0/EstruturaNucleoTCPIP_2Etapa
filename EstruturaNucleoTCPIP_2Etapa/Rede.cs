@@ -4,7 +4,7 @@ using System.Text;
 
 public class Rede
 {
-    public PduRede Pack(PduTransporte pduT, string ipDestino, string ipOrigem)
+    public PduRede Pack(string ipOrigem, string ipDestino, PduTransporte pduT)
     {
         return new PduRede(ipOrigem, ipDestino, pduT);
     }

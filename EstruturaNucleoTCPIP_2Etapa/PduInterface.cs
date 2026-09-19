@@ -7,10 +7,6 @@ public class PduInterface
     public string MacOrigem = "";
     public string MacDestino = "";
     public PduRede Dados;
-    public void EnviarDados()
-    {
-        Console.WriteLine("Camada de Interface: Enviando Quadro de Dados");
-    }
     public PduInterface(string macOrigem, string macDestino, PduRede dados)
     {
         MacOrigem = macOrigem;

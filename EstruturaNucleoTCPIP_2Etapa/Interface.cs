@@ -4,7 +4,7 @@ using System.Text;
 
 public class Interface
 {
-    public PduInterface Pack(PduRede pduR, string macOrigem ,string macDestino)
+    public PduInterface Pack(string macOrigem ,string macDestino, PduRede pduR)
     {
         return new PduInterface(macOrigem, macDestino, pduR);
     }
