@@ -13,4 +13,8 @@ public class PduAplicacao
     {
         Console.WriteLine("Camada de Aplicação: Enviando Dados");
     }
+       public void ReceberDados()
+    {
+        Console.WriteLine("Camada de Aplicação: Recebendo Dados");
+    }
 }

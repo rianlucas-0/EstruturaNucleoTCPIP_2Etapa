@@ -16,4 +16,8 @@ public class Rede
     {
         Console.WriteLine("Camada de Rede: Enviando Pacote de Dados");
     }
+       public void ReceberDados()
+    {
+        Console.WriteLine("Camada de Rede: Recebendo Pacote de Dados");
+    }
 }

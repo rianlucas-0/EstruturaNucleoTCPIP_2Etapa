@@ -16,4 +16,8 @@ public class Interface
     {
         Console.WriteLine("Camada de Interface: Enviando Quadro de Dados");
     }
+       public void ReceberDados()
+    {
+        Console.WriteLine("Camada de Interface: Recebendo Quadro de Dados");
+    }
 }

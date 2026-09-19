@@ -16,4 +16,8 @@ public class Transporte
     {
         Console.WriteLine("Camada de Transporte: Enviando Segmento de Dados");
     }
+    public void ReceberDados()
+    {
+        Console.WriteLine("Camada de Transporte: Recebendo Segmento de Dados");
+    }
 }
