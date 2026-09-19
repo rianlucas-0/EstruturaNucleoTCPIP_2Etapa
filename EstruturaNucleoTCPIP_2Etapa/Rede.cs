@@ -4,12 +4,16 @@ using System.Text;
 
 public class Rede
 {
-    public void Pack(PduTransporte pduT, string ipDestino)
+    public PduRede Pack(PduTransporte pduT, string ipDestino, string ipOrigem)
     {
-        PduRede pduRede = new PduRede("ipTeste", "portaTeste", pduT);
+        return new PduRede(ipOrigem, ipDestino, pduT);
     }
     public void UnPack(PduRede pduR, Computador comp)
     {
 
+    }
+    public void EnviarDados()
+    {
+        Console.WriteLine("Camada de Rede: Enviando Pacote de Dados");
     }
 }

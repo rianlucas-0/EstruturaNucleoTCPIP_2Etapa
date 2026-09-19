@@ -10,13 +10,23 @@ PduAplicacao aplicacao = new PduAplicacao("Mensagem de teste");
 
 Transporte transporte = new Transporte();
 
+Rede rede = new Rede();
+
+Interface interfacee = new Interface();
+
 pc1.Ligar();
 pc2.Ligar();
 
 aplicacao.EnviarDados();
 
-transporte.Pack(aplicacao, "10", "10");
+var pduTransporte = transporte.Pack(aplicacao, "10", "10");
 transporte.EnviarDados();
+
+var pduRede = rede.Pack(pduTransporte, pc1.Ip, pc2.Ip);
+rede.EnviarDados();
+
+var pduInterface = interfacee.Pack(pduRede, pc1.Mac, pc2.Mac);
+interfacee.EnviarDados();
 
 Console.WriteLine("\nModelo TCP/IP: Execução encerrada com sucesso!");
 
