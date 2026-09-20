@@ -8,9 +8,9 @@ public class Transporte
     {
         return new PduTransporte(portaOrigem, portaDestino, pduA);
     }
-    public PduTransporte UnPack(PduRede pduR)
+    public PduAplicacao UnPack(PduTransporte pduT)
     {
-        return pduR.Dados;
+        return pduT.Dados;
     }
     public void EnviarDados()
     {
