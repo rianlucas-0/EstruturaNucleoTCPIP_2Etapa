@@ -12,12 +12,13 @@ public class Interface
     {
         return pduI.Dados;
     }
-        public void EnviarDados()
+    public void EnviarDados()
     {
-        Console.WriteLine("Camada de Interface: Enviando Quadro de Dados");
+        Console.WriteLine("[INTERFACE] → Enviando Quadro");
     }
-       public void ReceberDados()
+
+    public void ReceberDados()
     {
-        Console.WriteLine("Camada de Interface: Recebendo Quadro de Dados");
+        Console.WriteLine("[INTERFACE] ← Recebendo Quadro");
     }
 }

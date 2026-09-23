@@ -9,12 +9,13 @@ public class PduAplicacao
     {
         Dados = dados;
     }
-        public void EnviarDados()
+    public void EnviarDados()
     {
-        Console.WriteLine("Camada de Aplicação: Enviando Dados");
+        Console.WriteLine("[APLICAÇÃO] → Enviando Dados");
     }
-       public void ReceberDados()
+
+    public void ReceberDados()
     {
-        Console.WriteLine("Camada de Aplicação: Recebendo Dados");
+        Console.WriteLine("[APLICAÇÃO] ← Recebendo Dados");
     }
 }

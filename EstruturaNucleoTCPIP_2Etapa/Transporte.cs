@@ -14,10 +14,11 @@ public class Transporte
     }
     public void EnviarDados()
     {
-        Console.WriteLine("Camada de Transporte: Enviando Segmento de Dados");
+        Console.WriteLine("[TRANSPORTE] → Enviando Segmento");
     }
+
     public void ReceberDados()
     {
-        Console.WriteLine("Camada de Transporte: Recebendo Segmento de Dados");
+        Console.WriteLine("[TRANSPORTE] ← Recebendo Segmento");
     }
 }

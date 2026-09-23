@@ -14,10 +14,11 @@ public class Rede
     }
     public void EnviarDados()
     {
-        Console.WriteLine("Camada de Rede: Enviando Pacote de Dados");
+        Console.WriteLine("[REDE] → Enviando Pacote");
     }
-       public void ReceberDados()
+
+    public void ReceberDados()
     {
-        Console.WriteLine("Camada de Rede: Recebendo Pacote de Dados");
+        Console.WriteLine("[REDE] ← Recebendo Pacote");
     }
 }
